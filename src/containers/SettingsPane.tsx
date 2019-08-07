@@ -25,7 +25,7 @@ export function SettingsPane() {
   function onChangeCheckInterval(event: any) {
     const value = Number(event.target.value);
 
-    if (60 <= value) {
+    if (0 <= value) {
       dispatch(settingCheckInterval(Number(event.target.value)));
     }
   }
