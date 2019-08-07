@@ -1,0 +1,31 @@
+{
+  "description": "Monitors https://prolific.co/ for new studies.",
+  "manifest_version": 2,
+  "name": "Prolific Assistant",
+  "version": "3.0.2",
+  "icons": {
+    "16": "assets/icon.png",
+    "48": "assets/icon.png",
+    "128": "assets/icon.png"
+  },
+  "browser_action": {
+    "default_icon": "assets/icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Prolific Assistant"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "notifications",
+    "storage",
+    "tabs",
+    "tts",
+    "webRequest",
+    "webRequestBlocking",
+    "https://*.prolific.co/*"
+  ]
+}
